@@ -19,43 +19,51 @@ import { CiBellOn } from "react-icons/ci";
 import { IoMdSettings } from "react-icons/io";
 import { HiOutlineSupport } from "react-icons/hi";
 import { IoIosArrowForward } from "react-icons/io";
-import profile from "../Profile.jpeg"
+import { GoChevronLeft } from "react-icons/go";
+import Jimbo from "../Jimbo.jpeg"
+import Profile from "../Profile.jpeg"
 import Image from 'next/image';
 
 const Drawer = () => {
     return (
         <>
-            <div className=' h-[62em] w-[50vh] shadow-md'>
-                <div className='border-b-2 w-[100%] h-[9em] flex space-y-[-8px] flex-col justify-center items-center'>
-                    <Image className='' src={profile} width={100} height={100} />
-                    <p className='text-blue-600 text-[28px] font-bold italic'>Jimbo</p>
-                </div>
-                <div className='font-sans flex flex-col  h-[48em]'>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><IoHomeOutline /></span>Home</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><MdOutlineDashboardCustomize /></span>Dashboard</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><FaRegCalendarAlt /></span>Schedule</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><CiLocationArrow1 /></span>Leads</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><IoIosPeople /></span>Clients</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><GrNotes /></span>Quotes</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><CiSettings /></span>Jobs</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><LiaFileInvoiceDollarSolid /></span>Invoices</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><FaMoneyCheckAlt /></span>Payments</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><GoGraph /></span>Reports</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><GrTemplate /></span>Templates</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><CiStar /></span>Services</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><MdOutlineShoppingCart /></span>Purchases</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><CiShop /></span>Marketplace</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><MdPeople /></span>Users</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow border-t-2 '><span><CiBellOn /></span>Notifications</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow'><span><IoMdSettings /></span>Settings</p>
-                    <p className='w-[100%] h-full flex items-center px-5 gap-2 flex-grow border-b-2'><span><HiOutlineSupport /></span>Support</p>
-                </div>
-                <div className='flex items-center mx-3 my-2 gap-4'>
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full">
-                        <Image className='w-[100%] h-[100%]' src={profile} />
+            <div className=' h-[63em] w-[50vh]  shadow-lg'>
+                <div className='border-b-2 w-[100%] h-[21vh] flex space-y-[-8px] flex-col justify-center items-center relative'>
+                    <Image className='' alt='' src={Jimbo} width={100} height={100} />
+                    <p className='text-[#0157c6] text-[28px] font-bold italic'>Jimbo</p>
+
+                    {/* Circle with Chevron icon */}
+                    <div className='absolute right-[-18px] border-[1px] top-[50%] translate-y-[-50%] bg-white rounded-full p-2'>
+                        <GoChevronLeft className='text-black' />
                     </div>
-                    <p>Welcome back <br />Sarfy Soudagar</p>
-                    <IoIosArrowForward />
+                </div>
+                <div className='flex flex-col text-[#767f8d] font-DmSans h-[50em]'>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><IoHomeOutline /></span>Home</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><MdOutlineDashboardCustomize /></span>Dashboard</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><FaRegCalendarAlt /></span>Schedule</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><CiLocationArrow1 /></span>Leads</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><IoIosPeople /></span>Clients</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><GrNotes /></span>Quotes</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><CiSettings /></span>Jobs</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><LiaFileInvoiceDollarSolid /></span>Invoices</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><FaMoneyCheckAlt /></span>Payments</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><GoGraph /></span>Reports</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><GrTemplate /></span>Templates</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><CiStar /></span>Services</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><MdOutlineShoppingCart /></span>Purchases</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><CiShop /></span>Marketplace</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><MdPeople /></span>Users</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow border-t-2 '><span><CiBellOn /></span>Notifications</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow'><span><IoMdSettings /></span>Settings</p>
+                    <p className='w-[100%] h-full flex items-center px-7 gap-[9px] flex-grow border-b-2'><span><HiOutlineSupport /></span>Support</p>
+                </div>
+                <div className='flex items-center h-[3em] font-serif mx-4 my-2 gap-2'>
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full overflow-hidden">
+                        <Image className="w-full h-full object-cover" src={Profile} alt="" />
+                    </div>
+
+                    <p className='text-[12px] font-DmSans text-[#767f8d]'>Welcome back 👏 <br /><span className='text-[16px]'>Sarfy Soudagar</span></p>
+                    <p className='mx-5'><IoIosArrowForward /></p>
                 </div>
             </div>
         </>
